@@ -40,3 +40,7 @@ async def read_items():
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, port=8000)
